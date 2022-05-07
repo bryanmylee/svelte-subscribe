@@ -30,7 +30,7 @@
 	"bugs": {
 		"url": "https://github.com/bryanmylee/svelte-subscribe/issues"
 	},
-	"homepage": "https://github.com/bryanmylee/svelte-popperjs#readme",
+	"homepage": "https://github.com/bryanmylee/svelte-subscribe#readme",
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
