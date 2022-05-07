@@ -1,6 +1,6 @@
 {
 	"name": "svelte-subscribe",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
