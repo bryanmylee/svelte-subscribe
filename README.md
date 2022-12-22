@@ -3,7 +3,7 @@
 [![npm version](http://img.shields.io/npm/v/svelte-subscribe.svg)](https://www.npmjs.com/package/svelte-subscribe)
 [![npm downloads](https://img.shields.io/npm/dm/svelte-subscribe.svg)](https://www.npmjs.com/package/svelte-subscribe)
 ![license](https://img.shields.io/npm/l/svelte-subscribe)
-![build](https://img.shields.io/github/workflow/status/bryanmylee/svelte-subscribe/publish)
+![build](https://img.shields.io/github/actions/workflow/status/bryanmylee/svelte-subscribe/publish.yml)
 [![coverage](https://coveralls.io/repos/github/bryanmylee/svelte-subscribe/badge.svg?branch=main)](https://coveralls.io/github/bryanmylee/svelte-subscribe?branch=main)
 [![size](https://img.shields.io/bundlephobia/min/svelte-subscribe)](https://bundlephobia.com/result?p=svelte-subscribe)
 
