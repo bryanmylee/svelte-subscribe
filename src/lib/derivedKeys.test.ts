@@ -1,5 +1,6 @@
 import { get, readable, writable } from 'svelte/store';
-import { derivedKeys } from './derivedKeys';
+import { derivedKeys } from './derivedKeys.js';
+import { expect, it } from 'vitest';
 
 it('derives an empty object from an empty object', () => {
 	const actual = derivedKeys({});

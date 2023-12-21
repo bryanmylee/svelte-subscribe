@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Readable } from 'svelte/store';
-	import { derivedKeys } from '$lib/derivedKeys';
+	import { derivedKeys } from './derivedKeys.js';
 
 	type Stores = $$Generic<Record<string, unknown>>;
 
@@ -9,7 +9,7 @@
 		default: { [K in keyof Stores]: Stores[K] extends Readable<infer V> ? V : never };
 	};
 
-	const values = derivedKeys($$restProps);
+	const values = derivedKeys($$restProps as Record<string, unknown>);
 </script>
 
 <slot {...$values} />
