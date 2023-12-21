@@ -1,6 +1,6 @@
-import { get, readable, writable } from 'svelte/store';
-import { derivedKeys } from './derivedKeys.js';
-import { expect, it } from 'vitest';
+import {get, readable, writable} from 'svelte/store';
+import {derivedKeys} from './derivedKeys.js';
+import {expect, it} from 'vitest';
 
 it('derives an empty object from an empty object', () => {
 	const actual = derivedKeys({});
@@ -10,11 +10,11 @@ it('derives an empty object from an empty object', () => {
 
 it('derives a readable key', () => {
 	const stores = {
-		a: readable(3)
+		a: readable(3),
 	};
 	const actual = derivedKeys(stores);
 	const expected = readable({
-		a: 3
+		a: 3,
 	});
 	expect(get(actual)).toEqual(get(expected));
 });
@@ -22,12 +22,12 @@ it('derives a readable key', () => {
 it('derives multiple keys', () => {
 	const stores = {
 		a: readable(3),
-		b: writable('john')
+		b: writable('john'),
 	};
 	const actual = derivedKeys(stores);
 	const expected = readable({
 		a: 3,
-		b: 'john'
+		b: 'john',
 	});
 	expect(get(actual)).toEqual(get(expected));
 });
@@ -35,7 +35,7 @@ it('derives multiple keys', () => {
 it('updates when writable keys update', () => {
 	const stores = {
 		a: readable(3),
-		b: writable('john')
+		b: writable('john'),
 	};
 
 	const actual = derivedKeys(stores);
@@ -44,7 +44,7 @@ it('updates when writable keys update', () => {
 
 	const expected = readable({
 		a: 3,
-		b: 'jane'
+		b: 'jane',
 	});
 	expect(get(actual)).toEqual(get(expected));
 });
