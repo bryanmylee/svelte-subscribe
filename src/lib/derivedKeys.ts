@@ -1,4 +1,4 @@
-import { derived, type Readable, type Writable } from 'svelte/store';
+import {derived, type Readable, type Writable} from 'svelte/store';
 
 export type ReadOrWritable<T> = Readable<T> | Writable<T>;
 
@@ -22,7 +22,7 @@ export const derivedKeys = <S extends ReadOrWritableKeys<unknown>>(storeMap: S):
 		entries.map(([, store]) => store),
 		($stores) => {
 			return Object.fromEntries($stores.map((store, idx) => [keys[idx], store]));
-		}
+		},
 	) as DerivedKeys<S>;
 };
 
