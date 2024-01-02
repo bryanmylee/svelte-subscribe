@@ -1,7 +1,7 @@
 {
 	"name": "svelte-subscribe",
 	"description": "Subscribe to non top-level stores in your Svelte templates",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
